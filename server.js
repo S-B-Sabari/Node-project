@@ -14,6 +14,10 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
+// app.use('/', (req,res)=>{
+//   console.log('Welcome to node project')
+//   res.send('Hello world')
+// })
 app.use('/api/auth', authRoutes);
 app.use('/api/home', homeRoutes)
 app.use('/api/admin', adminRoutes)
